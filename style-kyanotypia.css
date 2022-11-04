@@ -12,6 +12,8 @@
 }
 /* Add an active class to highlight the current page */
 .topnav a.active {
+  margin-right: 1%;
+  margin-top: 1%;
   float: right;
   background-color: #0D01DB;
   color: white;
@@ -24,7 +26,10 @@
   }
 
 .nadpis{
-padding-top: 10px;
+  margin-left: 1%;
+  margin-top: 1%;
+
+padding-top: 20px;
 padding-left: 15px;
 }
 .podnapdpis{
@@ -34,12 +39,14 @@ padding-left: 15px;
 }
 
 .fotky{
-  width: 100%;
+  width: 98%;
   margin: 0px;
 }
 .foto{
   margin-top:5px;
   margin-bottom: 5px;
+  margin-left: 1%;
+  margin-right: 1%;
 }
 
 
