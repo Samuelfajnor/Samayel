@@ -1,26 +1,33 @@
-/* Set core body defaults */
-
-
-
 /* Style the links inside the navigation bar */
 .topnav a {
-  float: right;
+
   display: block;
   color: black;
   text-align: center;
   padding: 1% 5%;
   text-decoration: none;
   font-size: 40px;
-  margin: 10px;
+  margin: 0px;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.35);
 }
 /* Add an active class to highlight the current page */
 .topnav a.active {
+  float: right;
   background-color: #0D01DB;
   color: white;
   font-family: 'Roboto Mono', monospace;
 }
 .topnav a:hover {background: #b3b3b3;}
+
+.nadpis{
+padding-top: 10px;
+padding-left: 15px;
+}
+.podnapdpis{
+  font-size: 25px;
+  font-family: 'Roboto Mono', monospace;
+  color:  #0D01DB;
+}
 
 .fotky{
   width: 100%;
@@ -30,26 +37,6 @@
   margin-top:5px;
   margin-bottom: 5px;
 }
-/* Style the navigation menu */
-nav {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  background: #ccc;
-  padding: 20px;
-  margin: 15px;
-  margin-left: 0px;
-
-}
-
-/* Style the list inside the menu */
-nav ul {
-  list-style-type: none;
-  padding: 30px;
-}
-
-
-
 
 
 
