@@ -133,6 +133,8 @@ img{
 
 /* TYPOGRAPHY */
 h3{
+  text-align: center;
+  padding: 10px;
   font-size: calc(var(--font-size-initial) * 2);
   letter-spacing: calc(var(--size-initial) * -1.25);
   line-height: calc(var(--font-size-initial) * 2.25);
