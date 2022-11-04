@@ -87,13 +87,14 @@ main2{
 }
 
 .foto-technologia{
-  height: 200%;
+  height: 100%;
   object-fit: cover;
   width: 100%;
 }
-.zvecovak{
-  padding-top: 50px;
-}
+
+
+
+
 
 
 section{
