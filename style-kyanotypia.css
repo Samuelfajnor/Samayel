@@ -1,13 +1,4 @@
 /* Set core body defaults */
-body {
-  min-height: 100vh;
-  text-rendering: optimizeSpeed;
-  line-height: 1.65;
-  padding: 2rem;
-  background-color: #f5f2f7;
-  color: #29344B;
-  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
-}
 
 
 
@@ -17,7 +8,7 @@ body {
   display: block;
   color: black;
   text-align: center;
-  padding: 20px 35px;
+  padding: 1% 5%;
   text-decoration: none;
   font-size: 40px;
   margin: 10px;
@@ -31,53 +22,12 @@ body {
 }
 .topnav a:hover {background: #b3b3b3;}
 
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
+.fotky{
+  margin: 0px;
 }
-
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-
-.kyanotypia{
-	text-align: left;
-	font-family: 'Roboto Mono', monospace;
-	color:rgba(13,1,219,1);
-	padding: 0% 0%;
-	font-size: 30px;
-	margin: 5px;
+.foto{
+  margin: 5px;
 }
-
-.Egypt-Kahira{
-	text-align: left;
-	font-family: 'Roboto Mono', monospace;
-	color:rgba(13,1,219,1);
-	font-size: 20px;
-	line-height:1px;
-	margin: 5px;
-	margin-top: 15px;
-}
-
-/* Style the header */
-header {
-  background-color: #666;
-  padding: 100px;
-  text-align: center;
-  font-size: 35px;
-  color: white;
-
-}
-
-/* Container for flexboxes */
-section {
-  display: -webkit-flex;
-  display: flex;
-
-}
-
 /* Style the navigation menu */
 nav {
   -webkit-flex: 1;
@@ -95,165 +45,85 @@ nav ul {
   list-style-type: none;
   padding: 30px;
 }
-.vystavy{
-	text-align: left;
-	font-family: 'Roboto Mono', monospace;
-	color:rgba(13,1,219,1);
-	font-size: 20px;
-	list-style-type: none;
-}
 
-.vystavy-nadpis{
-font-size: 40px;
-}
-/* Style the content */
-article {
-  -webkit-flex: 3;
-  -ms-flex: 3;
-  flex: 3;
-  background-color: #f1f1f1;
-  padding: 10px;
-  margin: 15px;
 
-}
 
-/* Box sizing rules */
-*,
-*::before,
-*::after {
+
+
+
+*{
   box-sizing: border-box;
-  padding-inline-start: 0px;
-}
-
-/* Remove default margin */
-body,
-h1,
-h2,
-h3,
-h4,
-p {
   margin: 0;
-
+  padding: 0;
 }
 
+:root{
+  --color-gray-90: hsl(0,0%,90%);
+  --color-gray-80: hsl(0,0%,80%);
+  --color-gray-50: hsl(0,0%,50%);
+  --color-light: hsl(0,0%,100%);
+  --font-size-initial: 15px;
+  --size-initial: 1px;
+}
 
+body{
+  background: var(--color-gray-90);
+  color: var(--color-gray-50);
+  font-family: BlinkMacSystemFont, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: var(--font-size-initial);
+}
 
-/***
- 🟣 SmolCSS Snippet Styles
- */
-.smol-css-grid {
-  --min: 20ch;
-  --gap: 1rem;
+/* CONTAINERS */
+main{
   display: grid;
-  gap:  var(--gap);
-  grid-template-columns: 1fr 1fr 1fr
-
+  grid-template-columns: repeat(auto-fit, minmax(calc(var(--font-size-initial) * 18), 1fr));
+  gap: calc(var(--font-size-initial) * 2);
+  margin: auto;
+  max-width: calc(var(--font-size-initial) * 100);
+  padding: calc(var(--font-size-initial) * 2);
 }
 
-
-/*  grid-gap:  var(--gap);
-  grid-template-columns: repeat(auto-fill, minmax(var(--min), 1fr));
+section{
+  background: var(--color-light);
+  border-radius: calc(var(--font-size-initial) * .5);
+  box-shadow: 0 calc(var(--size-initial) * 3) calc(var(--size-initial) * 6) hsla(0,0%,0%,.1);
+  overflow: hidden;
 }
 
-*/
-.smol-card-component {
-  --img-ratio: 3/3;
-
-  display: flex;
-  flex-direction: column;
-  /* Supported for flexbox in modern browsers since April 2021 */
-  gap: 1rem;
-  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.35);
- /* border-radius: 0.5rem; */
+article{
+  padding: calc(var(--font-size-initial) * 3);
 }
 
-.smol-card-component > img {
-  aspect-ratio: var(--img-ratio);
+figure{
+  height: calc(var(--font-size-initial) * 15);
+}
+
+/* IMAGE */
+img{
+  height: 100%;
   object-fit: cover;
   width: 100%;
 }
 
-.smol-card-component > img:first-child {
-  /*border-radius: 0.5rem 0.5rem 0 0; */
+/* TYPOGRAPHY */
+h3{
+  font-size: calc(var(--font-size-initial) * 2);
+  letter-spacing: calc(var(--size-initial) * -1.25);
+  line-height: calc(var(--font-size-initial) * 2.25);
+  margin: calc(var(--font-size-initial) * .5) 0;
 }
 
- .smol-card-component > img:last-child {
- /* border-radius: 0 0 0.5rem 0.5rem; */
-  margin-top: auto;
+p{
+  font-size: calc(var(--font-size-initial) * .875);
+  line-height: calc(var(--font-size-initial) * 1.25);
 }
 
-.smol-card-component > :not(img) {
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
-.smol-card-component > :not(img):first-child {
-  margin-top: 1rem;
-}
-
-/* Enhanced `:not()` accepts a selector list,
-but as a fallback you can chain `:not()` instead */
-.smol-card-component > :last-of-type:not(img, h2, h3, h4) {
-  margin-bottom: 1rem;
-}
-
-.smol-card-component > :not(h2, h3, h4) {
-  font-size: 0.9rem;
-}
-
-.smol-card-component > a {
-  align-self: start;
-}
-
-
-
-/* Additional demo styles from SmolCSS.dev
-   Not all styles may be needed for this pen */
-body > ul {
-  list-style: none;
-  margin: 0;
-
-  &:not([data-padding-unset]) {
-    padding: 0;
-  }
-}
-
-[class*="smol"]:not([data-component]) > *:not([data-unstyled]) {
-  display: grid;
-  padding: 1rem;
-  background-color: #E0D4F6;
-  color: #675883;
-  font-size: clamp(1.5rem, 4vw, 2rem);
-  font-weight: bold;
-  text-align: center;
- /* border-radius: 0.15em;*/
-  border: 1px dashed;
-
-  &:not([data-text]) {
-    place-content: center;
-  }
-
-  &[data-text] {
-    font-size: 1.15rem;
-    text-align: left;
-  }
-}
-
-[data-container-style] {
-  outline: 2px dotted #29344B;
-}
-
-
-/* Style the footer */
-footer {
-  background-color: rgba(13,1,219,1);
-  padding: 100px;
-  text-align: right;
-  color: white;
-  margin: 15px;
-  margin-left: 0px;
-  margin-right: 0px;
-  font-family:'Roboto Mono', monospace;
+span{
+  color: var(--color-gray-80);
+  font-size: calc(var(--font-size-initial) * .75);
+  letter-spacing: calc(var(--size-initial) * .75);
+  text-transform: uppercase;
+  word-spacing: var(--size-initial);
 }
 
 
