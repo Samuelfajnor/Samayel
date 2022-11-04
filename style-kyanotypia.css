@@ -23,10 +23,12 @@
 .topnav a:hover {background: #b3b3b3;}
 
 .fotky{
+  width: 100%;
   margin: 0px;
 }
 .foto{
-  margin: 5px;
+  margin-top:5px;
+  margin-bottom: 5px;
 }
 /* Style the navigation menu */
 nav {
