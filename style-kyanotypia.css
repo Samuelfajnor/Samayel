@@ -17,7 +17,11 @@
   color: white;
   font-family: 'Roboto Mono', monospace;
 }
-.topnav a:hover {background: #b3b3b3;}
+.topnav a:hover {background: #b3b3b3;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  }
 
 .nadpis{
 padding-top: 10px;
@@ -72,20 +76,52 @@ main{
   padding: calc(var(--font-size-initial) * 2);
 }
 
+
+main2{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(calc(var(--font-size-initial) * 18), 1fr));
+  gap: calc(var(--font-size-initial) * 2);
+  margin: auto;
+  max-width: calc(var(--font-size-initial) * 100);
+  padding: calc(var(--font-size-initial) * 2);
+}
+
+.foto-technologia{
+  height: 200%;
+  object-fit: cover;
+  width: 100%;
+}
+.zvecovak{
+  padding-top: 50px;
+}
+
+
 section{
   background: var(--color-light);
-  border-radius: calc(var(--font-size-initial) * .5);
+  border-radius: calc(var(--font-size-initial) * .0);
   box-shadow: 0 calc(var(--size-initial) * 3) calc(var(--size-initial) * 6) hsla(0,0%,0%,.1);
   overflow: hidden;
 }
 
 article{
   padding: calc(var(--font-size-initial) * 3);
+
 }
+
+section :hover {
+transform: scale(1.05);
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
 
 figure{
   height: calc(var(--font-size-initial) * 15);
 }
+
+
+
 
 /* IMAGE */
 img{
