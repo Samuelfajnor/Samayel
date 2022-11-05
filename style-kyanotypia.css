@@ -60,7 +60,7 @@ padding-left: 15px;
 :root{
   --color-gray-90: hsl(0,0%,90%);
   --color-gray-80: hsl(0,0%,80%);
-  --color-gray-50: hsl(0,0%,50%);
+  --color-gray-50: hsl(0,0%,30%);
   --color-light: hsl(0,0%,100%);
   --font-size-initial: 15px;
   --size-initial: 1px;
@@ -69,7 +69,7 @@ padding-left: 15px;
 body{
   background: var(--color-gray-90);
   color: var(--color-gray-50);
-  font-family: BlinkMacSystemFont, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: 'Roboto Mono', monospace;
   font-size: var(--font-size-initial);
 }
 
@@ -91,6 +91,7 @@ main2{
   margin: auto;
   max-width: calc(var(--font-size-initial) * 100);
   padding: calc(var(--font-size-initial) * 2);
+
 }
 
 .foto-technologia{
@@ -99,22 +100,29 @@ main2{
   width: 100%;
 }
 
-
-
-
-
+section2{
+  background:#0D01DB;
+  color: white;
+}
 
 section{
+  border:2px solid #000;
+
+
+}
+/* section{
   background: var(--color-light);
-  border-radius: calc(var(--font-size-initial) * .0);
+  border-radius: calc(var(--font-size-initial) * 0.0);
   box-shadow: 0 calc(var(--size-initial) * 3) calc(var(--size-initial) * 6) hsla(0,0%,0%,.1);
   overflow: hidden;
 }
+*/
 
 article{
-  padding: calc(var(--font-size-initial) * 3);
+  padding: calc(var(--font-size-initial) * 2);
 
 }
+
 
 section :hover {
 transform: scale(1.05);
@@ -160,6 +168,70 @@ span{
   text-transform: uppercase;
   word-spacing: var(--size-initial);
 }
+
+
+/*            FOOTER        */
+.site-footer
+{
+  background-color:#0D01DB;
+  padding:45px  20px;
+  font-size:15px;
+  line-height:24px;
+  color:white;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:20px;
+  margin-bottom: 20px;
+  letter-spacing:2px
+}
+
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li{
+  margin-top: 10px;
+  ,margin-bottom: 10px;
+  display:block
+}
+.footer-links a{
+  color:white;
+  font-size: 20px;
+  font-family: 'Roboto Mono', monospace;
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#737373;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+
+
+
+
+
 
 
 
