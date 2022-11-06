@@ -2,12 +2,12 @@
 body, body * {
   cursor: none;
 }
-/* ak je sirka stranky do 700px kurzor sa vypne*/
-@media only screen and (max-width: 700px) {
-    body .cursor {
-        display: 'none'
-    }
+/* ak je sirka stranky do 600px kurzor sa vypne*/
 
+@media screen and (max-width: 600px) {
+  .cursor {
+    display: none;
+  }
 }
 
 /* style cursor */
