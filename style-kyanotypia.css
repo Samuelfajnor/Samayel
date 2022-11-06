@@ -1,3 +1,25 @@
+/* vymazanie cursoru*/
+body, body * {
+  cursor: none;
+}
+/* style cursor */
+.cursor {
+  position: fixed;
+  background: #0D01DB;
+  width: 50px;
+  height: 50px;
+  margin: -10px 0 0 -10px;
+  border-radius: 50%;
+  border:2px solid white;
+  will-change: transform;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
+  z-index: 10000;
+}
+
 /* Style the links inside the navigation bar */
 .topnav a {
 
