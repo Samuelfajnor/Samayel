@@ -2,6 +2,14 @@
 body, body * {
   cursor: none;
 }
+/* ak je sirka stranky do 700px kurzor sa vypne*/
+@media only screen and (max-width: 700px) {
+    body .cursor {
+        display: 'none'
+    }
+
+}
+
 /* style cursor */
 .cursor {
   position: fixed;
