@@ -1,6 +1,6 @@
 document.body.addEventListener("mousemove", evt => {
   const mouseX = evt.clientX;
-  const mouseY = evt.clientY +200;
+  const mouseY = evt.clientY +50;
 
   gsap.set(".cursor", {
     x: mouseX,
