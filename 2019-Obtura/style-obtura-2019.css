@@ -213,6 +213,8 @@ span{
   font-size:15px;
   line-height:24px;
   color:white;
+  margin-right: 1%;
+  margin-left: 1%;
 }
 .site-footer hr
 {
