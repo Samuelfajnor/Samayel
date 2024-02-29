@@ -23,23 +23,38 @@
             text-align: left;
             font-size: 10px;
             padding-left: 30px;
+            margin-bottom: 5px;
         }
         .donut-chart-container {
             position: relative;
             width: 200px;
             height: 200px;
-            margin: 20px;
+            margin: 5px;
+            background-color: #f5f5f5;
+            border-radius: 10px;
+            padding-bottom:28px;
+            padding-top: 10px;
+
         }
         .chart-text {
             position: absolute;
-            top: 63%;
+            top: 66%;
             left: 50%;
             transform: translate(-50%, -50%);
             text-align: center;            
         }
+       .donut-chart-container h3 {
+            color: #999999;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            font-size: 15px;
+
+        }
         canvas {
             width: 100% !important;
             height: 100% !important;
+
         }
     </style>
 </head>
@@ -52,53 +67,65 @@
 
 <!-- Container for Donut Charts -->
 <div class="donut-chart-container" id="donutChartContainer1">
+    <h3>H260</h3> <!-- New line added -->
     <canvas class="donut-chart" id="donutChart1"></canvas>
     <div class="chart-text" id="chartText1">Loading...</div>
 </div>
 <div class="donut-chart-container" id="donutChartContainer2">
+    <h3>H220</h3> <!-- New line added -->
     <canvas class="donut-chart" id="donutChart2"></canvas>
     <div class="chart-text" id="chartText2">Loading...</div>
 </div>
 <div class="donut-chart-container" id="donutChartContainer3">
+    <h3>HW260</h3> <!-- New line added -->
     <canvas class="donut-chart" id="donutChart3"></canvas>
     <div class="chart-text" id="chartText3">Loading...</div>
 </div>
 <div class="donut-chart-container" id="donutChartContainer4">
+    <h3>HW220</h3> <!-- New line added -->
     <canvas class="donut-chart" id="donutChart4"></canvas>
     <div class="chart-text" id="chartText4">Loading...</div>
 </div>
 
 <!-- Additional Donut Chart Containers -->
 <div class="donut-chart-container" id="donutChartContainer5">
+    <h3>Vaha5</h3> <!-- New line added -->
     <canvas class="donut-chart" id="donutChart5"></canvas>
     <div class="chart-text" id="chartText5">Loading...</div>
 </div>
 <div class="donut-chart-container" id="donutChartContainer6">
+    <h3>Samo testuje</h3> <!-- New line added -->
     <canvas class="donut-chart" id="donutChart6"></canvas>
     <div class="chart-text" id="chartText6">Loading...</div>
 </div>
 <div class="donut-chart-container" id="donutChartContainer7">
+    <h3>Vaha 7</h3> <!-- New line added -->
     <canvas class="donut-chart" id="donutChart7"></canvas>
     <div class="chart-text" id="chartText7">Loading...</div>
 </div>
 <div class="donut-chart-container" id="donutChartContainer8">
+    <h3>Vaha 8</h3> <!-- New line added -->
     <canvas class="donut-chart" id="donutChart8"></canvas>
     <div class="chart-text" id="chartText8">Loading...</div>
 </div>
 <!-- Additional Donut Chart Containers -->
 <div class="donut-chart-container" id="donutChartContainer9">
+    <h3>Vaha 9</h3> <!-- New line added -->
     <canvas class="donut-chart" id="donutChart9"></canvas>
     <div class="chart-text" id="chartText9">Loading...</div>
 </div>
 <div class="donut-chart-container" id="donutChartContainer10">
+    <h3>Vaha 10</h3> <!-- New line added -->
     <canvas class="donut-chart" id="donutChart10"></canvas>
     <div class="chart-text" id="chartText10">Loading...</div>
 </div>
 <div class="donut-chart-container" id="donutChartContainer11">
+    <h3>Vaha 11</h3> <!-- New line added -->
     <canvas class="donut-chart" id="donutChart11"></canvas>
     <div class="chart-text" id="chartText11">Loading...</div>
 </div>
 <div class="donut-chart-container" id="donutChartContainer12">
+    <h3>Vaha 12</h3> <!-- New line added -->
     <canvas class="donut-chart" id="donutChart12"></canvas>
     <div class="chart-text" id="chartText12">Loading...</div>
 </div>
@@ -117,13 +144,8 @@
                     data: [value, remainingValue],
                     backgroundColor: ['#42f5da', '#e0dede'],
                     borderWidth: 1
-
-
-
-
                 }]
             },
-           
         });
     }
 
@@ -143,37 +165,37 @@
 
     // Update charts periodically
     setInterval(function() {
-        updateVariableAndChart('2053092', '1', 'donutChart1', 'chartText1', 'H260', 'AT9OT4NG12NIBLFN');
-        updateVariableAndChart('2162759', '1', 'donutChart2', 'chartText2', 'H220', '8S9EU2PT99T2PJFP');
-        updateVariableAndChart('2162885', '1', 'donutChart3', 'chartText3', 'HW260', 'K2RGDF582Q5GIHS9');
-        updateVariableAndChart('2162886', '1', 'donutChart4', 'chartText4', 'HW220', 'V4RJN9G2W7GZATSK');
+        updateVariableAndChart('2053092', '1', 'donutChart1', 'chartText1', 'počet setov', 'AT9OT4NG12NIBLFN');
+        updateVariableAndChart('2162759', '1', 'donutChart2', 'chartText2', 'počet setov', '8S9EU2PT99T2PJFP');
+        updateVariableAndChart('2162885', '1', 'donutChart3', 'chartText3', 'počet setov', 'K2RGDF582Q5GIHS9');
+        updateVariableAndChart('2162886', '1', 'donutChart4', 'chartText4', 'počet setov', 'V4RJN9G2W7GZATSK');
 
-        updateVariableAndChart('2206135', '1', 'donutChart5', 'chartText5', 'Vaha5', 'FGA035R07TYK3ZAK');
-        updateVariableAndChart('2206137', '1', 'donutChart6', 'chartText6', 'samo testuje', 'Y0IK5643ZNQNIMSM');
-        updateVariableAndChart('2206138', '1', 'donutChart7', 'chartText7', 'Vaha7', 'ED9NU29L3NW8JEN');
-        updateVariableAndChart('2206140', '1', 'donutChart8', 'chartText8', 'Vaha8', 'P8FVKVM2EPSGYH1A');
+        updateVariableAndChart('2206135', '1', 'donutChart5', 'chartText5', 'počet setov', 'FGA035R07TYK3ZAK');
+        updateVariableAndChart('2206137', '1', 'donutChart6', 'chartText6', 'počet setov', 'Y0IK5643ZNQNIMSM');
+        updateVariableAndChart('2206138', '1', 'donutChart7', 'chartText7', 'počet setov', 'ED9NU29L3NW8JEN');
+        updateVariableAndChart('2206140', '1', 'donutChart8', 'chartText8', 'počet setov', 'P8FVKVM2EPSGYH1A');
 
-        updateVariableAndChart('2206443','1', 'donutChart9', 'chartText9', 'Vaha9', 'L0IY5SXJIZMG1U9N');
-        updateVariableAndChart('2206444', '1', 'donutChart10', 'chartText10', 'Vaha10', '4YT6NKGJYI1SWWC3');
-        updateVariableAndChart('2206445', '1', 'donutChart11', 'chartText11', 'Vaha11', 'RZCZD5ABR3KMYKCW');
-        updateVariableAndChart('2206446', '1', 'donutChart12', 'chartText12', 'Vaha12', 'YSVRD66SVLCNVAOI');
+        updateVariableAndChart('2206443','1', 'donutChart9', 'chartText9', 'počet setov', 'L0IY5SXJIZMG1U9N');
+        updateVariableAndChart('2206444', '1', 'donutChart10', 'chartText10', 'počet setov', '4YT6NKGJYI1SWWC3');
+        updateVariableAndChart('2206445', '1', 'donutChart11', 'chartText11', 'počet setov', 'RZCZD5ABR3KMYKCW');
+        updateVariableAndChart('2206446', '1', 'donutChart12', 'chartText12', 'počet setov', 'YSVRD66SVLCNVAOI');
     }, 3000);
 
     // Initial update
-    updateVariableAndChart('2053092', '1', 'donutChart1', 'chartText1', 'H260', 'AT9OT4NG12NIBLFN');
-    updateVariableAndChart('2162759', '1', 'donutChart2', 'chartText2', 'H220', '8S9EU2PT99T2PJFP');
-    updateVariableAndChart('2162885', '1', 'donutChart3', 'chartText3', 'HW260', 'K2RGDF582Q5GIHS9');
-    updateVariableAndChart('2162886', '1', 'donutChart4', 'chartText4', 'HW220', 'V4RJN9G2W7GZATSK');
+    updateVariableAndChart('2053092', '1', 'donutChart1', 'chartText1', 'počet setov', 'AT9OT4NG12NIBLFN');
+    updateVariableAndChart('2162759', '1', 'donutChart2', 'chartText2', 'počet setov', '8S9EU2PT99T2PJFP');
+    updateVariableAndChart('2162885', '1', 'donutChart3', 'chartText3', 'počet setov', 'K2RGDF582Q5GIHS9');
+    updateVariableAndChart('2162886', '1', 'donutChart4', 'chartText4', 'počet setov', 'V4RJN9G2W7GZATSK');
 
-    updateVariableAndChart('2206135', '1', 'donutChart5', 'chartText5', 'Vaha5', 'FGA035R07TYK3ZAK');
-    updateVariableAndChart('2206137', '1', 'donutChart6', 'chartText6', 'samo testuje', 'Y0IK5643ZNQNIMSM');
-    updateVariableAndChart('2206138', '1', 'donutChart7', 'chartText7', 'Vaha7', 'ED9NU29L3NW8JEN');
-    updateVariableAndChart('2206140', '1', 'donutChart8', 'chartText8', 'Vaha8', 'P8FVKVM2EPSGYH1A');
+    updateVariableAndChart('2206135', '1', 'donutChart5', 'chartText5', 'počet setov', 'FGA035R07TYK3ZAK');
+    updateVariableAndChart('2206137', '1', 'donutChart6', 'chartText6', 'počet setov', 'Y0IK5643ZNQNIMSM');
+    updateVariableAndChart('2206138', '1', 'donutChart7', 'chartText7', 'počet setov', 'ED9NU29L3NW8JEN');
+    updateVariableAndChart('2206140', '1', 'donutChart8', 'chartText8', 'počet setov', 'P8FVKVM2EPSGYH1A');
 
-    updateVariableAndChart('2206443','1', 'donutChart9', 'chartText9', 'Vaha9', 'L0IY5SXJIZMG1U9N');
-    updateVariableAndChart('2206444', '1', 'donutChart10', 'chartText10', 'Vaha10', '4YT6NKGJYI1SWWC3');
-    updateVariableAndChart('2206445', '1', 'donutChart11', 'chartText11', 'Vaha11', 'RZCZD5ABR3KMYKCW');
-    updateVariableAndChart('2206446', '1', 'donutChart12', 'chartText12', 'Vaha12', 'YSVRD66SVLCNVAOI');
+    updateVariableAndChart('2206443','1', 'donutChart9', 'chartText9', 'počet setov', 'L0IY5SXJIZMG1U9N');
+    updateVariableAndChart('2206444', '1', 'donutChart10', 'chartText10', 'počet setov', '4YT6NKGJYI1SWWC3');
+    updateVariableAndChart('2206445', '1', 'donutChart11', 'chartText11', 'počet setov', 'RZCZD5ABR3KMYKCW');
+    updateVariableAndChart('2206446', '1', 'donutChart12', 'chartText12', 'počet setov', 'YSVRD66SVLCNVAOI');
 </script>
 
 </body>
