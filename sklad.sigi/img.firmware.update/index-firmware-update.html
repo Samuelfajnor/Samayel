@@ -1,1 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responzívny návod s fotkami</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  .top-bar {
+    background-color: #999999;
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+  .container {
+    display: grid;
+    grid-gap: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    
+  }
+  .step {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    
+    margin-bottom: 20px; /* Pridané pre oddelenie medzi krokmi */
+  }
+  .step img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  .step p {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  .download-button {
+    background-color: #27dbc0;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+</style>
+</head>
+<body>
+
+<div class="top-bar">
+  <button onclick="window.location.href='https://www.espressif.com/en/support/download/other-tools';" class="download-button">Flesh tool</button>
+  <button class="download-button" onclick="window.location.href='file:///C:/Users/Online/Desktop/img_firmware_update/release27.03.bin';">Download firmware 27.03.2024 </button>
+</div>
+
+<div class="container">
+  <div class="step">
+    <img src="file:///C:/Users/Online/Desktop/img_firmware_update/download_tool.png" alt="Step 1">
+    <p>Step 1: Download Flash tool from page.</p>
+  </div>
+  <div class="step">
+    <img src="file:///C:/Users/Online/Desktop/img_firmware_update/Flesh1.png" alt="Step 2">
+    <p>Step 2: Select ESP8266 and Develop mode.</p>
+  </div>
+    <div class="step">
+    <img src="file:///C:/Users/Online/Desktop/img_firmware_update/spravca uloh.png" alt="Step 3">
+    <p>Step 3: Open device manager. The port number may vary!</p>
+  </div>
+  <div class="step">
+    <img src="file:///C:/Users/Online/Desktop/img_firmware_update/Flesh2.png" alt="Step 3">
+    <p>Step 4: Select bin file and set according to the picture. Choose the COM port according to your computer settings. Press start.</p>
+  </div>
+</div>
+
+</body>
+</html>
 
