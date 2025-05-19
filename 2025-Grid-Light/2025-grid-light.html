@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grid-Lights-2025</title>
+  <link rel="stylesheet" type="text/css" href="style-2025-grid-light.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono">
+
+</head>
+
+<body>
+<div class="cursor"></div>
+
+<!-- cursor script -->
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js'></script>
+<script src="./script-2025-grid-light-cursor.js"></script>
+
+<div class="topnav" id="myTopnav">
+  <a href="https://www.samayel.com/" class="active">SAMAYEL</a>
+</div>
+
+<div class="nadpis">
+  <a class="podnapdpis">Grid-Lights<br></a>
+  <a class="podnapdpis">2025</a>
+</div>
+
+<!-- 3D SCÉNA -->
+<div class="scene-container">
+  <canvas id="glcanvas" tabindex="1"></canvas>
+</div>
+
+<!-- VIDEO -->
+<iframe id="myVideo" src="https://www.youtube.com/embed/-rB59MAMFOg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<div class="main2">
+  <section>
+    <article>
+      <img class="foto-technologia" src="assets/grid-light-trubica.jpg" width="100%" alt="">
+    </article>
+  </section>
+
+   <section>
+    <article>
+      <img class="foto-technologia" src="assets/grid-light-trubica2.jpg" width="100%" alt="">
+    </article>
+  </section>
+
+  <section>
+    <article>
+      <h3>TUBE</h3>
+      <p class="text-technologia">
+        Svetelné objekty – Ilúzia objemu a pohybu
+Táto svetelná inštalácia vznikla ako symbióza technológie a tvaru. Dizajn vychádza zo spojenia 3D tlače a tvarovo spracovaného kovového pletiva, ktoré plní nielen estetickú, ale aj funkčnú úlohu – slúži ako difúzor a zároveň vytvára optickú ilúziu objemu, keď sa objekt rozsvieti.
+
+Riadiaci systém je postavený na open-source platforme WLED, ktorá umožňuje adresovateľné ovládanie LED diód s vysokou variabilitou efektov a animácií. Svetlo tak možno ľahko prispôsobiť konkrétnemu priestoru alebo účelu.
+
+Objekty boli navrhnuté ako vizuálna svetelná inštalácia, no zároveň sú plne funkčné aj pre performatívne účely – či už ako súčasť scény, interaktívne prvky, alebo svetelné nástroje pre súčasné umenie, pohyb a hudbu.
+      </p>
+    </article>
+  </section>
+
+  
+  <section>
+    <article>
+      <h3>CUBE</h3>
+      <p class="text-technologia">
+        Táto svetelná jednotka pracuje s LED panelom s rozlíšením 16×16 pixelov, ktorý ponúka nielen svetelný zážitok, ale aj možnosť zobrazovať jednoduchý vizuálny obsah – animácie, symboly či základné informácie.
+
+Celý objekt je 3D tlačený, čo umožnilo vytvoriť kompaktný a zároveň výrazný dizajn. Zadná strana panelu je tvarovaná do ihlanových štruktúr, ktoré slúžia ako dynamický dizajnový prvok a zároveň opticky odľahčujú celú konštrukciu. Tieto prvky zdôrazňujú pohyb, rytmus a smerovanie svetla v priestore.
+
+Svetlo je ovládané cez open-source platformu WLED, ktorá poskytuje široké možnosti animácií a diaľkového ovládania. Vďaka tomu dokáže objekt reagovať na priestor, zvuk, pohyb.
+ A tak sa stáva flexibilným svetelným médiom pre umelecké aj praktické využitie.
+
+Tento objekt je navrhnutý ako samostatná svetelná inštalácia, ale zároveň má potenciál byť informačným alebo interaktívnym prvkom v rámci výstav, performancií alebo hybridných umeleckých formátov.
+      </p>
+    </article>
+  </section>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-6 col-md-3">
+        <h6>Inštalácie</h6>
+        <ul class="footer-links">
+          <li><a href="https://www.hradbysamoty.org/">2025 Hradby Samoty</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- SCRIPTS PRE CABLES PATCH -->
+<script src="js/patch.js" async></script>
+<script>
+  function showError(initiator, ...args) {
+    console.error("[" + initiator + "]", ...args);
+  }
+
+  function patchInitialized(patch) {}
+  function patchFinishedLoading(patch) {}
+
+  document.addEventListener("CABLES.jsLoaded", function () {
+    CABLES.patch = new CABLES.Patch({
+      patch: CABLES.exportedPatch,
+      prefixAssetPath: "",
+      assetPath: "assets/",
+      jsPath: "js/",
+      glCanvasId: "glcanvas",
+      glCanvasResizeToWindow: false,
+      onError: showError,
+      onPatchLoaded: patchInitialized,
+      onFinishedLoading: patchFinishedLoading,
+      canvas: { alpha: true, premultipliedAlpha: true }
+    });
+  });
+
+  document.getElementById('glcanvas').addEventListener('touchmove', (e) => { e.preventDefault(); }, false);
+</script>
+
+</body>
+</html>
