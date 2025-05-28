@@ -51,7 +51,7 @@ body, body * {
   font-family: 'Roboto Mono', monospace;
 }
 .topnav a:hover {
-  background: var(--color-gray-90);
+  background: var(--color-gray-30);
   color: var(--color-gray-50);
   border:2px solid #000;
   -webkit-transition: all 0.5s ease-in-out;
@@ -100,9 +100,9 @@ padding-left: 15px;
   --size-initial: 1px;
 }
 
-body{
-  background: var(--color-gray-90);
-  color: var(--color-gray-50);
+body {
+  background: #000; /* Čierne pozadie */
+  color: #a29674; /* Svetlejší text pre lepší kontrast */
   font-family: 'Roboto Mono', monospace;
   font-size: var(--font-size-initial);
 }
